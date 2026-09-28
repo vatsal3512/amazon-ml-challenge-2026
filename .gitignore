@@ -1,0 +1,18 @@
+# challenge data and everything the pipeline generates
+data/
+out*/
+logs/
+*.tsv
+*.tsv.gz
+*.npz
+*.npy
+*.pkl
+*.tar
+*.tgz
+*.txt.bak
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# keep the dependency list
+!requirements.txt

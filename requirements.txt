@@ -1,0 +1,14 @@
+# Python 3.12 (tested); one NVIDIA GPU (A100/H100/H200) for bi-encoder / cross-encoder training and scoring, ~24-30 CPU cores for features
+numpy==1.26.4
+pandas==2.1.4
+scipy==1.11.4
+scikit-learn==1.3.2
+lightgbm==4.7.0
+rapidfuzz==3.14.6
+torch==2.8.0
+transformers==5.17.0
+sentence-transformers==6.1.0
+tqdm==4.70.0
+# Pretrained models (downloaded once from the Hugging Face hub; no other external resources are used):
+#   sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2  (Apache-2.0, ~118M params)  - bi-encoder + cross-encoder
+#   xlm-roberta-base                                             (MIT, ~278M params)         - second cross-encoder
